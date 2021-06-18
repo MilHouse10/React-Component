@@ -6,6 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
 import './Animation.css';
 
+import Promise from 'promise-polyfill';
+
+if(!window.Promise) {
+  window.Promise = Promise;
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
